@@ -30,5 +30,3 @@ for i in lista:
 
 print(vect)
 print(lista_filme)
-
-
