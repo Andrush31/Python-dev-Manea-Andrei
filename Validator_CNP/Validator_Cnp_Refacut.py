@@ -8,16 +8,8 @@ def luna(cnp):
         return cnp[3]+cnp[4]
     else: return 'invalid'
 
-def an(cnp):
-        if int(cnp[0]) in sec_20:
-            return   '18' + cnp[1] + cnp[2]
-        elif int(cnp[0]) in [3,4]:
-            return '19' + cnp[1] + cnp[2]
-        elif int(cnp[0]) in [5,6]:
-            return '20' + cnp[1] + cnp[2]
-
 def judet(cnp):
-    if int(cnp[7]+cnp[8]) in [range(47),50, 51]:
+    if int(cnp[7]+cnp[8]) in [50, 51] or int(cnp[7]+cnp[8]) < 47:
         return cnp[7]+cnp[8]
     else: return " nu este valid"
 
@@ -57,7 +49,7 @@ def cifra_control(cnp):
         return  cifra % 11
 
 
-if int(CNP[12]) == cifra_control(CNP) and zi(CNP).isdigit() and luna(CNP).isdigit() and nnn(CNP).isdigit():
+if int(CNP[12]) == cifra_control(CNP) and zi(CNP).isdigit() and luna(CNP).isdigit() and nnn(CNP).isdigit() and judet(CNP).isdigit():
     print(f"Cnp-ul este valid")
 else:
     print("Cnp-ul nu este valid")
