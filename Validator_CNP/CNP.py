@@ -34,7 +34,6 @@ def sex(cnp):
             return S[i]
 
 def an(cnp):
-    for i in S:
         if int(cnp[0]) in sec_20:
             return   '18' + cnp[1] + cnp[2]
         elif int(cnp[0]) in [3,4]:
@@ -65,6 +64,8 @@ def cifra_control(cnp):
 
 if int(CNP[12]) != cifra_control(CNP):
     print("Cnp-ul nu este valid")
+    print(f"Cnp-ul apartine unui/unei {sex(CNP)}, nascut/a la data de {zi(CNP) + '. ' + luna(CNP) + ' .' + an(CNP)}\n "
+          f" In judetul {judet(CNP)}, a fost a {nnn(CNP)} persoana nascuta, iar cifra de verificare este {cifra_control(CNP)}")
 elif int(CNP[12]) == cifra_control(CNP):
     print(f"Cnp-ul apartine unui/unei {sex(CNP)}, nascut/a la data de {zi(CNP) + '. ' + luna(CNP)+ ' .' +an(CNP)}\n "
       f" In judetul {judet(CNP)}, a fost a {nnn(CNP)} persoana nascuta, iar cifra de verificare este {cifra_control(CNP)}")
