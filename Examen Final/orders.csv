@@ -1,0 +1,11 @@
+customer_id,name,email,country,registration_date
+1,Alice Popescu,alice.popescu@example.com,Romania,2022-01-15
+2,Bogdan Ionescu,bogdan.ionescu@example.com,Romania,2022-02-18
+3,Carla Dinu,carla.dinu@example.com,Bulgaria,2021-11-20
+4,Daniel Raducanu,daniel.raducanu@example.com,Hungary,2021-12-05
+5,Elena Marinescu,elena.marinescu@example.com,Germany,2022-03-11
+6,Fabian Moldovan,fabian.moldovan@example.com,Poland,2022-04-10
+7,Georgiana Nastase,georgiana.nastase@example.com,Romania,2021-10-30
+8,Horia Georgescu,horia.georgescu@example.com,France,2021-09-12
+9,Irina Constantin,irina.constantin@example.com,Spain,2022-02-25
+10,Janos Horvath,janos.horvath@example.com,Hungary,2022-03-02
